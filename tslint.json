@@ -1,0 +1,30 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-standard"],
+  "jsRules": true,
+  "rules": {
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "import-blacklist": [true, "styled-components"],
+    "interface-name": [true, "never-prefix"],
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false,
+    "jsx-no-multiline-js": false,
+    "max-classes-per-file": false,
+    "max-line-length": false,
+    "member-access": false,
+    // TODO temporarily allow console.log
+    "no-console": false,
+    "no-duplicate-imports": false,
+    "no-empty-interface": false,
+    "no-implicit-dependencies": [true, "dev", ["#veewme"]],
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": [true, "ignore-case", "locale-compare"],
+    "quotemark": [true, "single", "avoid-escape", "jsx-single"],
+    "semicolon": [true, "never"],
+    "space-before-function-paren": [true, "always"],
+    "trailing-comma": [true, {
+      "multiline": "never",
+      "singleline": "never"
+    }]
+  }
+}
