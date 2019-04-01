@@ -120,7 +120,7 @@ let webConfig = {
     new ForkTsCheckerWebpackPlugin({
       checkSyntacticErrors: true,
       measureCompilationTime: true,
-      memoryLimit: 1024,
+      memoryLimit: 2048,
       tslint: true
     }),
     new CopyWebpackPlugin([
